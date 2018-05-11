@@ -1,5 +1,14 @@
 #container {
-    background-color: grey;
     width: 360px;
     margin: 0 auto;
+    border: 2px solid gray;
+}
+
+h1 {
+    text-transform: uppercase
+}
+
+.completed {
+    color : grey;
+    text-decoration: line-through;
 }
