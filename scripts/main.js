@@ -18,3 +18,8 @@ $("input[type='text']").keypress(function(event) {
         $(this).val("")
     }
 })
+
+// Add toggling of new todo item
+$("#add-todo").click(function() {
+    $("input[type='text']").fadeToggle()
+})

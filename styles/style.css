@@ -44,7 +44,7 @@ li {
     color: #666;
 }
 
-span {
+li span {
     background: #e74c3c;
     height: 40px;
     width: 0px;
