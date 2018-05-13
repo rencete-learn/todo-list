@@ -1,5 +1,8 @@
 body {
-    font-family: "Roboto";
+    font-family: "Roboto";  
+    background: #2bc0e4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2bc0e4, #eaecc6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2bc0e4, #eaecc6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1 {
@@ -25,6 +28,7 @@ input {
     width: 100%;
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
 }
 
 input:focus {
@@ -40,8 +44,29 @@ li {
     color: #666;
 }
 
+span {
+    background: #e74c3c;
+    height: 40px;
+    width: 0px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
 li:nth-child(2n) {
     background-color: #f7f7f7;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
+}
+
+.fa-plus {
+    float: right;
 }
 
 .completed {
